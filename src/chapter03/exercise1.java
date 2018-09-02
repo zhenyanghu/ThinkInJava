@@ -12,6 +12,6 @@ public class exercise1 {
 				return;
 			}
 		}
-		System.out.println("�һ���");
+		System.out.println("test一下git");
 	}
 }
