@@ -13,5 +13,6 @@ public class exercise1 {
 			}
 		}
 		System.out.println("test一下git");
+		System.out.println("再test一下git");
 	}
 }
