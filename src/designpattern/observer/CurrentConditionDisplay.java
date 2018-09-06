@@ -12,7 +12,7 @@ public class CurrentConditionDisplay implements Observer, DisplayElement {
 	private WeatherData weatherDate;
 	
 	public CurrentConditionDisplay(Subject weatherData) {
-		this.setWeatherDate(weatherDate);//保存weather，以后后面需要取消
+		this.setWeatherDate(weatherDate);//保存weather，以后后面需要取消(移除观察者)
 		weatherData.registerObserver(this);//注册
 	}
 	
