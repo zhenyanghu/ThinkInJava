@@ -35,9 +35,9 @@ public class Test4 {
 			System.out.print(")");
 			System.out.println();
 		}
-		User user1 = (User) cons[0].newInstance("李四");
+		User user1 = (User) cons[0].newInstance("李明", 20);
 		System.out.println(user1);
-		User user2 = (User) cons[1].newInstance("李明", 20);
+		User user2 = (User) cons[1].newInstance("李四");
 		System.out.println(user2);
 		User user3 = (User) cons[2].newInstance();
 		System.out.println(user3);

@@ -10,7 +10,7 @@ public class Test3 {
 	public static void main(String[] args) throws ClassNotFoundException {
 		Class<?> clazz = Class.forName("reflect.Demo");
 		Class<?> superClazz = clazz.getSuperclass();
-//		clazz.getGenericSuperclass();
+//		System.out.println(clazz.getGenericSuperclass());
 		System.out.println(superClazz.getName());
 		Class[] interFaces = clazz.getInterfaces();
 		for(Class c : interFaces) {

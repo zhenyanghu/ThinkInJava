@@ -18,6 +18,7 @@ public class Test8 {
 		Field field2 = clazz.getDeclaredField("age");
 		field2.setAccessible(true);
 		field2.set(user, 27);
+		System.out.println(field2.get(user));//获取属性
 		System.out.println(user);
 	}
 }
