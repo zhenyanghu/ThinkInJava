@@ -3,7 +3,7 @@ package othertest;
 /**
  * Created by Rocky on 2018/3/26.
  */
-public class Test5 {
+public class Test05 {
     public static void main(String[] args) {
         System.out.println(f(5));
     }

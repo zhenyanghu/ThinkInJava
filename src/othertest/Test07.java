@@ -3,7 +3,7 @@ package othertest;
 /**
  * Created by Rocky on 2018/3/31.
  */
-public class Test7 {
+public class Test07 {
     public static void main(String[] args) {
         int a = 20;
         long b = 20L;

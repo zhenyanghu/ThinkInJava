@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by Rocky on 2017/12/25.
  */
-public class Test2 {
+public class Test02 {
     public static void main(String[] args) {
         System.out.println(Solution1.dominantIndex(new int[]{6, 2, 1, 0}));
     }
