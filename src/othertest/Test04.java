@@ -8,7 +8,7 @@ import java.util.Map;
 /**
  * Created by Rocky on 2018/3/15.
  */
-public class Test4 {
+public class Test04 {
     public static void main(String[] args) {
         int a = 10;
         int b = 20;

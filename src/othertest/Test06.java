@@ -5,7 +5,7 @@ import chapter11.Test;
 /**
  * Created by Rocky on 2018/3/27.
  */
-public class Test6 {
+public class Test06 {
     public static void main(String[] args) {
         T t = new T();
         t.test();

@@ -5,7 +5,7 @@ import javax.naming.Name;
 /**
  * Created by Rocky on 2018/3/31.
  */
-public class Test8 {
+public class Test08 {
     private String name;
     public static void main(String[] args) {
         S s = new S();
@@ -16,7 +16,7 @@ public class Test8 {
 //        System.out.println(str);
         //编译错误，静态方法中不能直接访问成员变量，因为静态方法中没有隐式的this传递
         //System.out.println(name);
-        System.out.println(new Test8().name);
+        System.out.println(new Test08().name);
     }
 }
 
