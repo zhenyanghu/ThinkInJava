@@ -25,7 +25,7 @@ public class StreamDemo5 {
 		 * 而最终返回结果在跳过前 3 个元素后只有后面 7 个返回。
 		 */
 		
-		
+		System.out.println("----------------------------------华丽分割线----------------------------------------------------");
 		/*
 		 *  有一种情况是 limit/skip 无法达到 short-circuiting 目的的，就是把它们放在 Stream 的排序操作后，原因跟 sorted 这个 intermediate 操作有关：
 		 *  此时系统并不知道 Stream 排序后的次序如何，所以 sorted 中的操作看上去就像完全没有被 limit 或者 skip 一样。
@@ -41,6 +41,7 @@ public class StreamDemo5 {
 		 * 即虽然最后的返回元素数量是 2，但整个管道中的 sorted 表达式执行次数没有像前面例子相应减少。
 		 */
 		
+		System.out.println("----------------------------------华丽分割线----------------------------------------------------");
 		/*
 		 * sorted: 对 Stream 的排序通过 sorted 进行，它比数组的排序更强之处在于你可以首先对 Stream 进行各类 map、filter、limit、skip 
 		  *  甚至 distinct 来减少元素数量后，再排序，这能帮助程序明显缩短执行时间

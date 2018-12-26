@@ -116,6 +116,7 @@ public class Demo4 {
 				.collect(Collectors.joining(" ; "));
 		System.out.println(phpDevelopers);
 		
+		// map：把input stream 里面的每一个元素映射成out stream的另外一个元素
 		System.out.println("将 Java programmers 的 first name 存放到 Set:"); 
 		Set<String> javaDevFirstName = javaProgrammers
 				.stream()
