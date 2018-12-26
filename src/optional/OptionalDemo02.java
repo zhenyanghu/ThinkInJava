@@ -15,35 +15,30 @@ public class OptionalDemo02 {
 		 *	的Stream。
 		 */
 		Optional<String> stringOptional = Optional.of("zhangsan");
-		System.out.println(stringOptional.filter(e -> e.length() > 5).orElse("王五"));
+		System.out.println("filter: " + stringOptional.filter(e -> e.length() > 5).orElse("王五"));
 		stringOptional = Optional.empty();
-		System.out.println(stringOptional.filter(e -> e.length() > 5).orElseGet(() -> "王五"));
+		System.out.println("filter: " + stringOptional.filter(e -> e.length() > 5).orElseGet(() -> "王五"));
 		
+		// 转换值
 		// map方法执行传入的lambda表达式参数对Optional实例的值进行修改,修改后的返回值仍然是一个Optional对象
 		Optional<String> stringOptional2 = Optional.of("zhangsan");
-		System.out.println(stringOptional2.map(e -> e.toUpperCase()).orElse("失败"));
+		System.out.println("map: " + stringOptional2.map(e -> e.toUpperCase()));
 		
 		stringOptional = Optional.empty();
-		System.out.println(stringOptional.map(e -> e.toUpperCase()).orElse("失败"));
+		System.out.println("map: " + stringOptional.map(e -> e.toUpperCase()).orElse("失败"));
 		
-		/*
-		 * flagMap
-		 *  如果创建的Optional中的值存在，就对该值执行提供的Function函数调用，返回一个Optional类型的值，否 
-		 *  则就返回一个空的Optional对象.flatMap与map（Funtion）方法类似，区别在于flatMap中的mapper返回 
-		 *  值必须是Optional，map方法的mapping函数返回值可以是任何类型T。调用结束时，flatMap不会对结果 
-		 *  用Optional封装。
-		 */
-		//map方法中的lambda表达式返回值可以是任意类型，在map函数返回之前会包装为Optional。 
-		//但flatMap方法中的lambda表达式返回值必须是Optionl实例
+		//flapMap
+		// map方法中的lambda表达式返回值可以是任意类型，在map函数返回之前会包装为Optional。 
+		// 但flatMap方法中的lambda表达式返回值必须是Optionl实例，flatMap不会对结果用Optional封装。
 		Optional<String> stringOptional3 = Optional.of("zhangsan");
-		System.out.println(stringOptional3.flatMap(e -> Optional.of("lisi")).orElse("失败"));
+		System.out.println("flapMap: " + stringOptional3.flatMap(e -> Optional.of("lisi")));
 		
 		stringOptional = Optional.empty();
-		System.out.println(stringOptional.flatMap(e -> Optional.empty()).orElse("失败"));
+		System.out.println("flapMap: " + stringOptional.flatMap(e -> Optional.empty()).orElse("失败"));
 		
 		// ifPresent 方法的参数是一个Consumer的实现类，Consumer类包含一个抽象方法，该抽象方法对传入的值进行处理，只处理没有返回值。
 		Optional<String> stringOptional4 = Optional.of("zhangsan");
-		stringOptional4.ifPresent(e -> System.out.println("我被处理了。。。" + e));
+		stringOptional4.ifPresent(e -> System.out.println("ifPresent: " + "我被处理了。。。" + e));
 		
 		
 	}
