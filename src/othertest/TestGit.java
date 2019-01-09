@@ -13,6 +13,5 @@ public class TestGit {
         System.out.println(date);
         List<String> list = new ArrayList<>();
         System.out.println("自动导包确实好用");
-        System.out.println("test gitgit");
     }
 }
