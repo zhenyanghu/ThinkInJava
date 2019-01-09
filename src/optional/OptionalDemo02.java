@@ -23,8 +23,13 @@ public class OptionalDemo02 {
 		// map方法执行传入的lambda表达式参数对Optional实例的值进行修改,修改后的返回值仍然是一个Optional对象
 		Optional<String> stringOptional2 = Optional.of("zhangsan");
 		System.out.println("map: " + stringOptional2.map(e -> e.toUpperCase()));
-		
-		stringOptional = Optional.empty();
+
+		String str = Optional.of("zhangsan").map(e -> e.toUpperCase()).orElse(null);
+		System.out.println("--test--" + str);
+
+		// orElse: Optional中存在值则返回此值，否则，返回默认值
+//		stringOptional = Optional.empty();
+		stringOptional = Optional.ofNullable("hehehe");
 		System.out.println("map: " + stringOptional.map(e -> e.toUpperCase()).orElse("失败"));
 		
 		//flapMap

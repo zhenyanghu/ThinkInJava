@@ -4,3 +4,5 @@
 .classpath
 *.xml
 *.iml
+target/classes/b.properties
+target/classes/a.properties
