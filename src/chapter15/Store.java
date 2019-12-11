@@ -1,9 +1,9 @@
 package chapter15;
 
+import net.mindview.util.Generator;
+
 import java.util.ArrayList;
 import java.util.Random;
-
-import net.mindview.util.Generator;
 
 class Product {
 	
@@ -29,7 +29,7 @@ class Product {
 		private Random random = new Random(47);
 		@Override
 		public Product next() {
-			return new Product("Test", Math.round(random.nextDouble() * 1000.0) + 0.99);
+			return new Product("Test1", Math.round(random.nextDouble() * 1000.0) + 0.99);
 		}
 	};
 		

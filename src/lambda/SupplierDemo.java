@@ -8,7 +8,7 @@ import java.util.function.Supplier;
 public class SupplierDemo {
 
 	public static void main(String[] args) {
-		Supplier<String> supplier1 = () -> "Test supplier";
+		Supplier<String> supplier1 = () -> "Test1 supplier";
 		System.out.println(supplier1.get());
 		
 		Supplier<Integer> supplier2 = () -> {

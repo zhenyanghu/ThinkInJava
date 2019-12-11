@@ -45,6 +45,6 @@ public class OptionalDemo02 {
 		Optional<String> stringOptional4 = Optional.of("zhangsan");
 		stringOptional4.ifPresent(e -> System.out.println("ifPresent: " + "我被处理了。。。" + e));
 		
-		System.out.println("Test idea git");
+		System.out.println("Test1 idea git");
 	}
 }
